@@ -1,8 +1,15 @@
 $(document).ready (function(){
 
-$('body').css('background-color' , 'red');
+
+$('body').css('background-color','red');
+//this is not changing the background color GRRRRRRR
 
 
+$('#depositChecking').click (function () {
+  $('#amountChecking').val('');
+  alert('hello!');
+
+});
 
 });
 
@@ -15,10 +22,9 @@ $('body').css('background-color' , 'red');
 
 
 
-
-
-
 //Begin with the document ready function
+$(document).ready (function(){
+});
 
     //Checking account deposit function
 
