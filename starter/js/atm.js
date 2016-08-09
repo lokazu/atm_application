@@ -1,68 +1,67 @@
-$(document).ready (function(){
-
-
-$('body').css('background-color','red');
-//this is not changing the background color GRRRRRRR
-
-
-$('#depositChecking').click (function () {
-  $('#amountChecking').val('');
-  alert('hello!');
-
-});
-
-});
-
-
-
-
-
-
-
-
-
-
 //Begin with the document ready function
-$(document).ready (function(){
+$(document).ready(function() {
+
+
+  $('body').css('background-color', 'red');
+  //this is not changing the background color GRRRRRRR
+
+//Checking account deposit function
+//On click of the depositChecking button
+//Get value from the amountChecking input field
+
+  $('#depositChecking').click(function() {
+    // $('#amountChecking').val('');
+    // alert('hello!');
+  });
+
+    // var x = amountChecking;
+    // var y = depositChecking;
+    // var checkingBalance = x+y;
+    
+
+
 });
 
-    //Checking account deposit function
 
-      //On click of the depositChecking button
 
-        //Get value from the amountChecking input field
 
-        //Take that value and add it to the existing value in the checkingBalance div
 
-    //Checking account withdrawl funtion
 
-      //On click of the withdrawChecking button
 
-        //Get value from the amountChecking input field
 
-        // If that value is greater than the value in the account ignore that action
-        // In other words if this would put the account into a negative balance do not allow it
 
-        //Else subtract that value from the current amount in the checking account
 
-    //Savings account deposit function
+// Take that value and add it to the existing value in the checkingBalance div
 
-      //On click of the depositSavings button
+//Checking account withdrawl funtion
 
-        //Get value from the amountSavings input field
+//On click of the withdrawChecking button
 
-        //Take that value and add it to the existing value in the savingsBalance div
+//Get value from the amountChecking input field
 
-    //Savings account withdraw funtion
+// If that value is greater than the value in the account ignore that action
+// In other words if this would put the account into a negative balance do not allow it
 
-      //On click of the withdrawl button
+//Else subtract that value from the current amount in the checking account
 
-        //Get value from the amountSavings input field
+//Savings account deposit function
 
-         //If that value is greater than the value in the account ignore that action
-         //In other words if this would put the account into a negative balance do not allow it
+//On click of the depositSavings button
 
-         //Else subtract that value from the current amount in the savings account
+//Get value from the amountSavings input field
+
+//Take that value and add it to the existing value in the savingsBalance div
+
+//Savings account withdraw funtion
+
+//On click of the withdrawl button
+
+//Get value from the amountSavings input field
+
+//If that value is greater than the value in the account ignore that action
+//In other words if this would put the account into a negative balance do not allow it
+
+//Else subtract that value from the current amount in the savings account
 
 // Bonus-- get the two accounts to work with each other and allow for overdraft protection
 
