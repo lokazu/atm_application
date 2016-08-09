@@ -1,3 +1,19 @@
+$(document).ready (function(){
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
 //Begin with the document ready function
 
     //Checking account deposit function
