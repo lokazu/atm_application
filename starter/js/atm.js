@@ -9,22 +9,35 @@ $(document).ready(function() {
 //On click of the depositChecking button
 //Get value from the amountChecking input field
 
-  $('#depositChecking').click(function() {
-    // $('#amountChecking').val('');
-    // alert('hello!');
-  });
+  $('#depositChecking').on('click', function() {
+    var currentBalance = parseInt($('#checkingBalance').text().replace('$', ''));
 
-    // var x = amountChecking;
-    // var y = depositChecking;
+
+    // console.log(currentBalance);
+    // console.log('currentBalance');
+    // var x = $(amountChecking);
+    // var y = $(depositChecking);
     // var checkingBalance = x+y;
-    
 
+    // var newBalance = parseInt($('#checkingBalance').val(''));
+    //   console.log();
+    //   $('#amountChecking').val('');
+    //   alert('hello!');
+
+
+    // var x = $(amountChecking);
+    // var y = $(depositChecking);
+    // var checkingBalance = x+y;
+
+  });
 
 });
 
 
 
-
+// function replace(string) {
+//   newString = parseInt(string, replace )
+// }
 
 
 
