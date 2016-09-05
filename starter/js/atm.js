@@ -25,10 +25,10 @@ $(document).ready(function() {
 
   //Take that value and add it to the existing value in the savingsBalance div
 
-  $('#depositChecking').on('click', function() {
-    var amountChecking = parseInt($('#amountChecking').val());
+  $('#withdrawChecking').on('click', function() {
     var checkingBalance = parseInt($('#checkingBalance').text().replace('$', ''));
-    var currentBalance = amountChecking + checkingBalance;
+    var amountChecking =      parseInt($('#amountChecking').val());
+    var currentBalance = checkingBalance - amountChecking;
     $('#checkingBalance').text('$'+ currentBalance);
   });
 
