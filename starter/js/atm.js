@@ -17,13 +17,14 @@ $(document).ready(function() {
     var currentBalance = amountChecking + checkingBalance;
     $('#checkingBalance').text('$'+ currentBalance);
   });
-  //Savings account deposit function
 
-  //On click of the depositSavings button
 
-  //Get value from the amountSavings input field
-
-  //Take that value and add it to the existing value in the savingsBalance div
+  //Checking account withdrawl funtion
+  //On click of the withdrawChecking button
+  //Get value from the amountChecking input field
+  // If that value is greater than the value in the account ignore that action
+  // In other words if this would put the account into a negative balance do not allow it
+  //Else subtract that value from the current amount in the checking account
 
   $('#withdrawChecking').on('click', function() {
     var checkingBalance = parseInt($('#checkingBalance').text().replace('$', ''));
@@ -32,58 +33,59 @@ $(document).ready(function() {
     $('#checkingBalance').text('$'+ currentBalance);
   });
 
-    // console.log(currentBalance);
-    // console.log('currentBalance');
-    // var x = $(amountChecking);
-    // var y = $(depositChecking);
-    // var checkingBalance = x+y;
-
-    // var newBalance = parseInt($('#checkingBalance').val(''));
-    //   console.log();
-    //   $('#amountChecking').val('');
-    //   alert('hello!');
+  //Savings account deposit function
+  //On click of the depositSavings button
+  //Get value from the amountSavings input field
+  //Take that value and add it to the existing value in the savingsBalance div
 
 
-    // var x = $(amountChecking);
-    // var y = $(depositChecking);
-    // var checkingBalance = x+y;
+  $('#depositSavings').on('click', function() {
+    var savingsBalance = parseInt($('#savingsBalance').text().replace('$', ''));
+    var amountSavings =      parseInt($('#amountSavings').val());
+    var totalSavings = savingsBalance + amountSavings;
+    $('#savingsBalance').text('$'+ totalSavings);
+  });
 
-    // function replace(string) {
-    //   newString = parseInt(string, replace )
-    // }
+  //Savings account withdraw funtion
+
+  //On click of the withdrawl button
+
+  //Get value from the amountSavings input field
+
+  //If that value is greater than the value in the account ignore that action
+  //In other words if this would put the account into a negative balance do not allow it
+
+  //Else subtract that value from the current amount in the savings account
 
 
-
-    // Take that value and add it to the existing value in the checkingBalance div
-    //Checking account withdrawl funtion
-    //On click of the withdrawChecking button
-    //Get value from the amountChecking input field
-    // If that value is greater than the value in the account ignore that action
-    // In other words if this would put the account into a negative balance do not allow it
-    //Else subtract that value from the current amount in the checking account
-
-
+  $('#withdrawlSaving').on('click', function() {
+    var savingsBalance = parseInt($('#savingsBalance').text().replace('$', ''));
+    var amountSavings =      parseInt($('#amountSavings').val());
+    var totalSavings = savingsBalance - amountSavings;
+    $('#savingsBalance').text('$'+ totalSavings);
+  });
 
 });
 
+// console.log(currentBalance);
+// console.log('currentBalance');
+// var x = $(amountChecking);
+// var y = $(depositChecking);
+// var checkingBalance = x+y;
+
+// var newBalance = parseInt($('#checkingBalance').val(''));
+//   console.log();
+//   $('#amountChecking').val('');
+//   alert('hello!');
 
 
+// var x = $(amountChecking);
+// var y = $(depositChecking);
+// var checkingBalance = x+y;
 
-
-
-
-
-
-//Savings account withdraw funtion
-
-//On click of the withdrawl button
-
-//Get value from the amountSavings input field
-
-//If that value is greater than the value in the account ignore that action
-//In other words if this would put the account into a negative balance do not allow it
-
-//Else subtract that value from the current amount in the savings account
+// function replace(string) {
+//   newString = parseInt(string, replace )
+// }
 
 // Bonus-- get the two accounts to work with each other and allow for overdraft protection
 
